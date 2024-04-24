@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o seu arquivo CSS -->
+    <title>Agendamento de Corte de Cabelo - Cliente</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Agendamento de Corte de Cabelo - Cliente</h2>
+
+        <!-- Formulário de Cliente -->
+        <form id="clienteForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </form>
+
+        <!-- Seleção de Barbeiro e Horário -->
+        <label for="barbeiro">Selecione o Barbeiro:</label>
+        <select id="barbeiro" name="barbeiro" required>
+            <option value="barbeiro1">Barbeiro 1</option>
+            <option value="barbeiro2">Barbeiro 2</option>
+            <option value="barbeiro3">Barbeiro 3</option>
+        </select>
+        <label for="horario">Horário:</label>
+        <select id="horario" name="horario" required>
+            <!-- Horários serão carregados dinamicamente pelo JavaScript -->
+        </select>
+
+        <!-- Botão para Agendar -->
+        <button type="button" id="agendarCorteBtn">Agendar</button>
+
+        <!-- Lista de Agendamentos (Será preenchida pelo JavaScript) -->
+        <h3>Agendamentos</h3>
+        <ul id="listaAgendamentos"></ul>
+    </div>
+
+    <!-- Seu JavaScript aqui (certifique-se de vincular o arquivo JS corretamente) -->
+    <script src="cliente.js"></script>
+</body>
+</html>
